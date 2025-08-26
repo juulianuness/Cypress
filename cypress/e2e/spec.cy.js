@@ -8,7 +8,7 @@ describe('Teste de Login', () => {
     cy.get('h1').contains('Cadastro de Produtos')
   })
 
-    it('Login com falha', () => {
+    it('Falha no Login', () => {
     cy.visit('https://front.serverest.dev/login')
     cy.get('[data-testid="email"]').type('julia@email.com')
     cy.get('[data-testid="senha"]').type('123')
